@@ -5,7 +5,8 @@ import pickle
 from datetime import datetime
 
 # Load the trained model
-with open("model.pkl", "rb") as file:
+path = os.path.join(os.path.dirname(__file__), "model.pkl")
+with open(path, "rb") as file:
     model = pickle.load(file)
 
 # Streamlit UI
