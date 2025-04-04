@@ -5,9 +5,14 @@ import pickle
 import os
 from datetime import datetime
 
-# Load the trained model
-path = os.path.join(os.path.dirname(__file__), "model.pkl")
-with open(path, "rb") as file:
+# Get the directory of the current script (e.g., app.py)
+current_dir = os.path.dirname(__file__)
+
+# Create the full path to model.pkl in the same directory
+model_path = os.path.join(current_dir, "model.pkl")
+
+# Open and load the model
+with open(model_path, "rb") as file:
     model = pickle.load(file)
 
 # Streamlit UI
