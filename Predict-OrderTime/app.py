@@ -49,18 +49,19 @@ new_data = pd.DataFrame({
 })
 
 
-# Custom CSS for the button
+
+# Custom CSS
 st.markdown("""
     <style>
     div.stButton > button:first-child {
-        background-color: #333333;
-        color: white;
-        border: 2px solid white;
+        background-color: #4CAF50; /* Green */
+        color: black;
+        border: 1px solid transparent;
         border-radius: 8px;
         padding: 6px 16px;
         font-size: 14px;
         font-weight: bold;
-        transition: background-color 0.3s ease;
+        transition: all 0.3s ease;
     }
 
     div.stButton > button:first-child:hover {
