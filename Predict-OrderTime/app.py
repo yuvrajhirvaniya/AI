@@ -48,20 +48,29 @@ new_data = pd.DataFrame({
     'order_day': [order_day]
 })
 
-# Inject custom CSS for button styling
+
+# Custom CSS for the button
 st.markdown("""
     <style>
     div.stButton > button:first-child {
-        background-color: #4CAF50; /* Green */
+        background-color: #333333;
         color: white;
-        height: 3em;
-        width: 100%;
-        border-radius: 10px;
-        border: none;
+        border: 2px solid white;
+        border-radius: 8px;
+        padding: 6px 16px;
+        font-size: 14px;
         font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    div.stButton > button:first-child:hover {
+        background-color: black;
+        color: white;
+        border: 2px solid white;
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Predict Delivery Time
 if st.button("Predict Delivery Time"):
