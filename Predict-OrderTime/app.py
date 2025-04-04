@@ -54,7 +54,7 @@ new_data = pd.DataFrame({
 st.markdown("""
     <style>
     div.stButton > button:first-child {
-        background-color: white;
+        background-color: #4CAF50;
         color: white;
         border: 2px solid white;
         border-radius: 8px;
