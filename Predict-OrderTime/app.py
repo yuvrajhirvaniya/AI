@@ -50,13 +50,13 @@ new_data = pd.DataFrame({
 
 
 
-# Custom CSS
+# Custom CSS for ghost-style button
 st.markdown("""
     <style>
     div.stButton > button:first-child {
-        background-color: #4CAF50; /* Green */
-        color: black;
-        border: 1px solid transparent;
+        background-color: white;
+        color: white;
+        border: 2px solid white;
         border-radius: 8px;
         padding: 6px 16px;
         font-size: 14px;
@@ -71,6 +71,7 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 
 # Predict Delivery Time
